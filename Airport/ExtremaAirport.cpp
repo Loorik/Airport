@@ -12,7 +12,7 @@ ExtremaAirport::ExtremaAirport(vector<Airport> all)
 
 string ExtremaAirport::calculateAndPrintExtrema()
 {
-	const int bordeBottom = -125;
+	const int borderBottom = -125;
 	const int borderTop = -68;
 	
 	stringstream s;
