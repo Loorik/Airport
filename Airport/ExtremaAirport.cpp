@@ -12,8 +12,11 @@ ExtremaAirport::ExtremaAirport(vector<Airport> all)
 
 string ExtremaAirport::calculateAndPrintExtrema()
 {
+	const int bordeBottom = -125;
+	const int borderTop = -68;
+	
 	stringstream s;
-	//alle Flugh‰fen
+	//alle Flugh√§fen
 	Airport tempMax;
 	Airport tempMin;
 	double max = 0.0;
@@ -38,7 +41,7 @@ string ExtremaAirport::calculateAndPrintExtrema()
 			min = allAirports[i].getLat();
 			tempMin = allAirports[i];
 		}
-		if (allAirports[i].getLng() <= -68 && allAirports[i].getLng() >= -125)
+		if (allAirports[i].getLng() <= borderTop && allAirports[i].getLng() >= borderBottom)
 		{
 			if (allAirports[i].getLat() >= CoreMax)
 			{
